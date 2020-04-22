@@ -17,4 +17,8 @@ class CookBookTest < Minitest::Test
   def test_it_exists
     assert_instance_of CookBook, @cookbook
   end
+
+  def test_it_has_attributes
+    assert_equal [], @cookbook.recipes
+  end
 end
