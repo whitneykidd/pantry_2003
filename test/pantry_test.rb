@@ -14,4 +14,8 @@ class IngredientTest < Minitest::Test
   def test_it_exists
     assert_instance_of Pantry, @pantry
   end
+
+  def test_it_has_attributes
+    assert_equal ({}), @pantry.stock
+  end
 end
