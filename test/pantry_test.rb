@@ -18,4 +18,8 @@ class IngredientTest < Minitest::Test
   def test_it_has_attributes
     assert_equal ({}), @pantry.stock
   end
+
+  def test_it_can_check_stock
+    assert_equal 0,@pantry.stock_check(@ingredient1)
+  end
 end
