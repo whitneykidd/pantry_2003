@@ -25,4 +25,13 @@ class CookBook
   def date
     Date.today.strftime('%m-%d-%Y')
   end
+
+  def summary
+    summary = []
+    @recipes.each do |recipe|
+      summary << {name: recipe.name,
+        details: {ingredients: [{ingredient: 'tbd', amount: 'tbd'}]}}
+    end
+    summary
+  end
 end
