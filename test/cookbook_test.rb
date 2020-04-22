@@ -64,6 +64,7 @@ class CookBookTest < Minitest::Test
   end
 
   def test_it_can_return_summary
+    skip
     cookbook = CookBook.new
     recipe1 = Recipe.new("Mac and Cheese")
     recipe2 = Recipe.new("Burger")
